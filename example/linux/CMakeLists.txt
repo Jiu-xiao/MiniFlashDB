@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 add_compile_options(-g)
 
-add_subdirectory(../.. ms.out)
+add_subdirectory(../.. mf.out)
 
 target_include_directories(
     MiniFlash
