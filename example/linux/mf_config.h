@@ -15,7 +15,6 @@ static uint8_t flash_1[2048], flash_2[2048];
 
 /* Flash读写函数 */
 #define MF_ERASE mf_erase
-#define MF_READ mf_read
 #define MF_WRITE mf_write
 
 static void mf_erase(void *addr) { memset(addr, 0, MF_FLASH_BLOCK_SIZE); }

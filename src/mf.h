@@ -1,5 +1,5 @@
-#ifndef __MS_H__
-#define __MS_H__
+#ifndef __MF_H__
+#define __MF_H__
 
 #ifdef __cplusplus
 extern "C" {
@@ -47,7 +47,7 @@ mf_key_info_t *mf_search_key(const char *name);
 
 mf_status_t mf_add_key(const char *name, void *data, size_t size);
 
-mf_status_t mf_set_key(const char *name, void *data, size_t size);
+mf_status_t mf_set_key(const char *name, const void *data, size_t size);
 
 uint8_t *mf_get_key_data(mf_key_info_t *key);
 

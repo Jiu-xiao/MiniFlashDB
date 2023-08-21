@@ -6,7 +6,7 @@ file(
 
 add_library(${PROJECT_NAME} STATIC)
 
-target_sources(${PROJECT_NAME} PUBLIC ${${PROJECT_NAME}_SOURCES})
+target_sources(${PROJECT_NAME} PRIVATE ${${PROJECT_NAME}_SOURCES})
 
 target_include_directories(
   ${PROJECT_NAME}

@@ -1,2 +1,4 @@
 .history/**
 example/linux/build/**
+build/**
+.cache/**
