@@ -18,9 +18,9 @@ extern "C" {
 
 #define MF_FLASH_HEADER 0x12345678
 
-typedef struct {
-  bool next_key;
-  size_t name_length;
+typedef struct __attribute__((packed)) {
+  uint8_t next_key;
+  uint32_t name_length : 24;
   size_t data_size;
 } mf_key_info_t;
 

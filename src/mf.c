@@ -114,7 +114,7 @@ mf_status_t mf_add_key(const char *name, void *data, size_t size) {
   memcpy(data_name_buf, data, size);
 
   *key_buf = (mf_key_info_t){
-      .next_key = false, .name_length = name_len, .data_size = size};
+      .next_key = 0U, .name_length = name_len, .data_size = size};
 
   if (last_key != NULL) {
     last_key->next_key = true;
