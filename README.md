@@ -56,7 +56,15 @@ void mf_init();
 /* 添加键值 */
 mf_status_t mf_add_key(const char *name, void *data, size_t size);
 
-/* 读取键值 */
+/* 设置键值数据 */
 mf_status_t mf_set_key(const char *name, const void *data, size_t size);
 
+/* 查找键值 */
+mf_key_info_t *mf_search_key(const char *name);
+
+/* 获取键值数据 */
+uint8_t *mf_get_key_data(mf_key_info_t *key);
+
+/* 获取键值名称 */
+const char *mf_get_key_name(mf_key_info_t *key);
 ```
