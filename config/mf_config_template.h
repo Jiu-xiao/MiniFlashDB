@@ -13,5 +13,4 @@
 
 /* Flash读写函数 */
 #define MF_ERASE mf_erase
-#define MF_READ mf_read
 #define MF_WRITE mf_write
