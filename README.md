@@ -17,7 +17,7 @@ target_include_directories(
 
 ### mf_config.h
 
-此文件放在 `${MiniFlashDB_CONFIG_FILE_PATH}目录下，由cmake加入头文件列表`
+示例配置文件在 ` ./config`文件夹下。请将 `mf_config.h `放在`${MiniFlashDB_CONFIG_FILE_PATH}`目录下，由cmake加入头文件列表
 
 ```c
 // mf_config.h
